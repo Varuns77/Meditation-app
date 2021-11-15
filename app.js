@@ -40,7 +40,7 @@ seasons.forEach((season) => {
     })
 })
 
-// Change Durations
+// Change Duration
 durations.forEach((duration) => {
     duration.addEventListener('click', () => {
         audioDuration = duration.getAttribute("audio-duration");
