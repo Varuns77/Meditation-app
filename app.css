@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mina&family=Scope+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue';
+    font-family: 'Mina', sans-serif;
+    font-family: 'Scope One', serif;
+    text-transform: uppercase;
+    
+}
+
+.video{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* puts the video in the background */
+    /* opacity: 0.5; */
+}
+
+.video video{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "d d a a s s"
+    "d d a a s s"
+    "d d a a s s"
+    "d d a a s s";
+
+}
+
+.audio{
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.audio img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.audio .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.audio .progress {
+    width: 300px;
+    height: 300px;
+}
+
+.audio .progress svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    /* z-index: -1; */
+    pointer-events: none;
+}
+
+.audio .time-display {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+  
+.durations {
+    grid-area: d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.durations .duration:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.durations .duration img {
+    width: 75px;
+}
+
+.durations .duration p {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.seasons {
+    grid-area: s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seasons .season img {
+    width: 75px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.seasons .season:hover {
+    transform: scale(1.2);
+}
+
+/* TOGGLE MENU  */
+.toggle-menu {
+    display: none;
+}
+
+.time-select,.sound-picker,.player-container {
+    /* width: 50%; */
+    height: 80%;
+    flex: 1;
+}
+
+.time-select{
+    background-color: lightblue;
+}
+
+.sound-picker {
+    background-color: lightgreen;
+}
+
+.player-container {
+    background-color: skyblue;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+
+<body>
+
+    <div class="video">
+        <video loop muted>
+            <source src="./video/Summer.mp4" type="video/mp4" >
+        </video>
+    </div>
+    <div class="app">
+        <div class="audio">
+            <audio loop>
+                <source src="./audio/meditation.mp3" type="audio/mpeg">
+            </audio>
+            <div class="play">
+                <img src="./img/play.svg" class="playBtn">
+            </div>
+            <div class="progress">
+                <svg class="moving-outline" width="150" height="150" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+                </svg>
+
+                <svg class="track-outline" width="150" height="150" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+                </svg>
+                
+                <h3 class="time-display">02:00</h3> 
+            </div>
+        </div>
+        <div class="durations">
+            <!-- <div class="duration" audio-duration="10">
+                <img src="./img/2min.png" alt="2 min">
+                <p>10 sec</p>
+            </div>      -->
+            <div class="duration" audio-duration="120">
+                <img src="./img/2min.png" alt="2 min">
+                <p>2 min</p>
+            </div>     
+            <div class="duration" audio-duration="300">
+                <img src="./img/5min.png" alt="5 min">
+                <p>5 min</p>
+            </div>     
+            <div class="duration" audio-duration="600">
+                <img src="./img/10min.png" alt="10 min">
+                <p>10 min</p>
+            </div>     
+            <div class="duration" audio-duration="1200">
+                <img src="./img/20min.png" alt="20 min">
+                <p>20 min</p>
+            </div>     
+        </div>
+
+        <div class="seasons">
+            <div class="season" video-src="./video/Winter03.mp4" data-sound="./audio/meditation.mp3">
+                <img src="./img/winter.png" alt="Winter">
+            </div>
+            <div class="season" video-src="./video/spring.mp4" data-sound="./audio/meditation.mp3">
+                <img src="./img/spring.png" alt="Spring">
+            </div>
+            <div class="season" video-src="./video/Summer.mp4" data-sound="./audio/meditation.mp3">
+                <img src="./img/summer.png" alt="Summer">
+            </div>
+            <div class="season" video-src="./video/Autumn.mp4" data-sound="./audio/meditation.mp3">
+                <img src="./img/autumn.png" alt="Autumn">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="hideBtn.js"></script>
+</body>
+
+</html>
