@@ -30,7 +30,6 @@ const checkPlaying = audio => {
 
 
 //Change Seasons
-// How forEach loop works??????????????????
 seasons.forEach((season) => {
     season.addEventListener("click", () => {
         video.src = season.getAttribute("video-src");
